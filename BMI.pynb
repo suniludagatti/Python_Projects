@@ -1,0 +1,86 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "897084e7-2ca4-4c74-8b52-791636d64580",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Welcome to BMI\n"
+     ]
+    },
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter your name Sunil Udagatti\n",
+      "Weight in kg  71.9\n",
+      "Height in meters  1.69\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "25.174188578831277\n",
+      "Sunil Udagatti, you are Overweight.\n"
+     ]
+    }
+   ],
+   "source": [
+    "print (\"Welcome to BMI\")\n",
+    "name = input (\"Enter your name\")\n",
+    "x = float(input('Weight in kg '))\n",
+    "y = float(input ('Height in meters '))\n",
+    "BMI = (x)/(y*y)\n",
+    "print(BMI)\n",
+    "if BMI> 0 :\n",
+    "    if (BMI < 18.5) :\n",
+    "        print(name +'Underweight.')\n",
+    "    elif (BMI < 24.9):\n",
+    "        print(name +', you are Normal weight.')\n",
+    "    elif (BMI < 29.9):\n",
+    "        print(name + ', you are Overweight.')\n",
+    "    elif (BMI < 34.9):\n",
+    "        print(name +',you are Obese')\n",
+    "    elif (BMI < 39.9):\n",
+    "        print(name+',Severly obese')\n",
+    "    else:\n",
+    "        print('Danger')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "82a9fa23-0a8d-4f69-ab5b-47cb1d3655eb",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
